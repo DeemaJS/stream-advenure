@@ -5,5 +5,3 @@ module.exports = function (cmd, args) {
 	var child = spawn(cmd, args)
 	return duplex(child.stdin, child.stdout);
 };
-
-
